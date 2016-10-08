@@ -1,0 +1,37 @@
+
+repositorio github profe
+https://github.com/alejo8591/unipiloto-apm-5
+
+arcvhivos para ignorar
+https://www.gitignore.io/
+
+diseños de maquetacion
+http://pencil.evolus.vn/
+http://www.axure.com/
+
+aionic framework
+http://ionicframework.com/html5-input-types/
+
+pagina para revisar resolucionm en los dispositivos
+http://viewportsizes.com/mine/
+
+patrones de diseño
+
+mostly fluid
+http://mediaqueri.es/
+column drop
+http://weenudge.com/
+layout shifter // sirve para acomodar de desarrollo de baja resolucion a una recsolucion mucho mas grande
+http://anderssonwise.com/
+tiny tweaks
+http://gingerwhale.com/
+off canvas
+https://m.facebook.com/
+
+framework trabajo de diseño
+http://getskeleton.com/
+http://getbootstrap.com/
+http://foundation.zurb.com/
+
+fuentes letras google
+https://fonts.google.com/
