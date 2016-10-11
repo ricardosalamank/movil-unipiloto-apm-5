@@ -1,0 +1,54 @@
+<html>
+<script type="text/javascript">
+ var mi=new Array();
+ var otro = new Array();
+ 
+otro["id"] = '1234'; 
+ 
+ mi[1] = otro;
+
+ 
+ alert(mi["1"]["id"]);
+ 
+
+</script>
+
+<script>
+MultiArray = new Array(5)
+
+MultiArray [0] = new Array(2)
+
+MultiArray [0]['nombre'] = "Tom"
+
+MultiArray [0][1] = "scientist"
+
+MultiArray [1] = new Array(2)
+
+MultiArray [1][0] = "Beryl"
+
+MultiArray [1][1] = "engineer"
+
+MultiArray [2] = new Array(2)
+
+MultiArray [2][0] = "Ann"
+
+MultiArray [2][1] = "surgeon"
+
+MultiArray [3] = new Array(2)
+
+MultiArray [3][0] = "Bill"
+
+MultiArray [3][1] = "taxman"
+
+MultiArray [4] = new Array(2)
+
+MultiArray [4][0] = "Myrtal"
+
+MultiArray [4][1] = "bank robber"
+
+alert(MultiArray[0]['nombre']);
+
+</script>
+
+
+</html>
