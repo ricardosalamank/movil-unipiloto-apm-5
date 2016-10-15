@@ -41,3 +41,6 @@ https://nodejs.org/en/
 
 gestion de paquetes nedojs
 https://www.npmjs.com/
+
+nos ayuda a ignorar dependencias para no subir al repositorio github
+https://www.gitignore.io/
