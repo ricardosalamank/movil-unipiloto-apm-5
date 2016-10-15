@@ -1,0 +1,19 @@
+{
+  "name": "lab4",
+  "version": "0.1.0",
+  "description": "lab4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardosalamank/movil-unipiloto-apm-5.git"
+  },
+  "author": "ricardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardosalamank/movil-unipiloto-apm-5/issues"
+  },
+  "homepage": "https://github.com/ricardosalamank/movil-unipiloto-apm-5#readme"
+}
