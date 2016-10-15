@@ -1,0 +1,59 @@
+h1 { color: red;  font-family: Arial;  font-size: 80px;  }
+
+head{ align-items: center;}
+
+body{
+    background-color: antiquewhite
+}
+
+
+#contenido {
+     float:left;
+     background-color:azure;
+    width: 30%;
+}
+
+#contenido2 {
+    float:left;
+     background-color:azure;
+    width: 30%;
+}
+
+@media screen and (min-width: 0px)  and (max-width: 480px){
+
+    body p{
+        color: red;
+
+    }
+    .masthead{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 765px){
+
+    body p{
+        color: green;
+
+    }
+
+}
+
+@media screen and (min-width: 766px) and (max-width: 995px){
+
+    body p{
+        color: blue;
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    body p{
+        color: orange;
+
+    }
+
+}
