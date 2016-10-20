@@ -12,7 +12,7 @@ var Vehicle = (function () {
         this.wheel = wheel;
     }
     return Vehicle;
-}());
+})();
 //solo se puede hacer una herencia no multiple herencia en typrscript
 var Car = (function (_super) {
     __extends(Car, _super);
@@ -20,14 +20,14 @@ var Car = (function (_super) {
         _super.call(this, 4, 'gas', 'red'); //utiliza mi constructor padre
     }
     return Car;
-}(Vehicle));
+})(Vehicle);
 var Motorcycle = (function (_super) {
     __extends(Motorcycle, _super);
     function Motorcycle() {
         _super.call(this, 2, 'gasoline');
     }
     return Motorcycle;
-}(Vehicle));
+})(Vehicle);
 var car = new Car();
 var motorcycle = new Motorcycle();
 console.log(car);
