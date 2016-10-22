@@ -1,0 +1,25 @@
+<!--
+<h3>{{product.id}}</h3><br />
+<h3>{{product.name}}</h3><br />
+<h3>{{product.description}}</h3><br />
+<h3>{{product.type}}</h3><br />
+<h3>{{product.price}}</h3><br />
+<h3>{{product.quantity}}</h3><br />
+-->
+<div>
+    <hr />
+    <label  for="">Unidades: </label>
+    <br>
+    <input type="number" [(ngModel)]="ride.units" placeholder="units">
+    <br>
+    <label (click)="onSelectFest(ride)"> + agregar Festivos </label><br />
+    <h3>{{ ride.festives}}</h3>
+    <br>
+    <label (click)="onSelectAir(ride)">+ agregar Airport </label><br />
+    <h3>{{ ride.airport}}</h3>
+    <label (click)="onSelectApp(ride)"> + agregar App </label><br />
+    <h3>{{ ride.app}}</h3>
+    <br>
+    <label>Total: </label><br />
+    <h1>{{ (ride.units*82)+ride.festives+ride.airport+ride.app}}</h1>
+</div>
