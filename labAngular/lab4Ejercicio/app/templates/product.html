@@ -1,25 +1,43 @@
-<!--
-<h3>{{product.id}}</h3><br />
-<h3>{{product.name}}</h3><br />
-<h3>{{product.description}}</h3><br />
-<h3>{{product.type}}</h3><br />
-<h3>{{product.price}}</h3><br />
-<h3>{{product.quantity}}</h3><br />
--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Justified Nav Template for Bootstrap</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+
+    </head>
+
+    <body>
+
 <div>
     <hr />
     <label  for="">Unidades: </label>
     <br>
-    <input type="number" [(ngModel)]="ride.units" placeholder="units">
+    <input class="form-control" style="width: 150px" type="number" [(ngModel)]="ride.units" placeholder="units">
     <br>
-    <label (click)="onSelectFest(ride)"> + agregar Festivos </label><br />
+    <button class="btn btn-lg btn-success" (click)="onSelectFest(ride)"> + add Festivos </button>
     <h3>{{ ride.festives}}</h3>
-    <br>
-    <label (click)="onSelectAir(ride)">+ agregar Airport </label><br />
+    <button class="btn btn-lg btn-success"  (click)="onSelectAir(ride)">+ add Airport </button>
     <h3>{{ ride.airport}}</h3>
-    <label (click)="onSelectApp(ride)"> + agregar App </label><br />
+    <button class="btn btn-lg btn-success"  (click)="onSelectApp(ride)"> + add App </button>
     <h3>{{ ride.app}}</h3>
     <br>
-    <label>Total: </label><br />
+    <label>Total: </label>
     <h1>{{ (ride.units*82)+ride.festives+ride.airport+ride.app}}</h1>
 </div>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<h2>student</h2>
+<ul>
+    <li *ngFor="let student of students">
+        <span>{{student.id}}</span> {{student.name | uppercase }}
+    </li>
+</ul>
+<h2>teacher</h2>
+<ul>
+    <li *ngFor="let teacher of teachers">
+        <span>{{teacher.id}}</span> {{teacher.name | uppercase }}
+    </li>
+</ul>
