@@ -44,3 +44,21 @@ https://www.npmjs.com/
 
 nos ayuda a ignorar dependencias para no subir al repositorio github
 https://www.gitignore.io/
+
+css tutorial
+http://librosweb.es/libro/css/
+http://es.learnlayout.com/
+
+javascript tutorial
+http://librosweb.es/libro/javascript/
+
+xhtml
+http://librosweb.es/libro/xhtml/
+
+angular 2
+http://juristr.com/blog/2016/09/ng2-released/
+
+lecturas
+http://www.desarrolloweb.com/articulos/que-es-responsive-web-design.html
+https://msdn.microsoft.com/en-us/magazine/hh653584.aspx
+https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/
