@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Ride } from '../app/model/ride';
+import { Ride } from '../model/ride';
 
 @Component({
     selector: 'my-app',
