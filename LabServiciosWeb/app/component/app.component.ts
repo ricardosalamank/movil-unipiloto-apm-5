@@ -1,21 +1,20 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import { Product } from '../model/product';
 import {ProductService} from "../service/product.service";
-import {Router} from "@angular/router";
 
 @Component({
-    selector: 'product-list-app',
+    selector: 'my-app',
     templateUrl: 'app/templates/product-list.html',
     providers: [ProductService]
 })
-export class ProductListComponent implements OnInit {
+export class AppComponent {
     title: string = "los productos del Año";
 
     selected: Product;
 
     products: Product[];
 
-    constructor(private router: Router, private productService: ProductService) {
+    constructor(private productService: ProductService) {
 
     }
 
@@ -27,5 +26,7 @@ export class ProductListComponent implements OnInit {
         this.getProducts();
     }
 
-
+    onSelect(product: Product){
+        this.selected = product;
+    }
 }

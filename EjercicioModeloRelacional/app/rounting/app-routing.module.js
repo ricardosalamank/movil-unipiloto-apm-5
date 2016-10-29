@@ -11,19 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var router_1 = require("@angular/router");
 var core_1 = require("@angular/core");
 var home_component_1 = require("../component/home.component");
-var page_two_component_1 = require("../component/page-two.component");
-var about_component_1 = require("../component/about.component");
-var page_one_component_1 = require("../component/page-one.component");
 var product_list_component_1 = require("../component/product-list.component");
 var product_detail_component_1 = require("../component/product-detail.component");
+var line_item_component_1 = require("../component/line-item.component");
+var sales_invoice_component_1 = require("../component/sales-invoice.component");
+var user_list_component_1 = require("../component/user-list.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'about', component: about_component_1.AboutComponent },
-    { path: 'page-one', component: page_one_component_1.PageOneComponent },
-    { path: 'page-two', component: page_two_component_1.PageTwoComponent },
     { path: 'product-list', component: product_list_component_1.ProductListComponent },
-    { path: 'product/detail/:id', component: product_detail_component_1.ProductDetailComponent }
+    { path: 'user-list', component: user_list_component_1.UserListComponent },
+    { path: 'product/detail/:id', component: product_detail_component_1.ProductDetailComponent },
+    { path: 'page-line-item', component: line_item_component_1.LineItemComponent },
+    { path: 'line/detail/:id', component: sales_invoice_component_1.SalesInvoice }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

@@ -12,17 +12,11 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./component/app.component');
-var page_one_component_1 = require('./component/page-one.component');
-var app_routing_module_1 = require("./rounting/app-routing.module");
-var about_component_1 = require("./component/about.component");
-var page_two_component_1 = require("./component/page-two.component");
-var home_component_1 = require("./component/home.component");
-var common_1 = require("@angular/common");
-var product_list_component_1 = require("./component/product-list.component");
-var product_detail_component_1 = require("./component/product-detail.component");
-var line_item_component_1 = require("./component/line-item.component");
-var sales_invoice_component_1 = require("./component/sales-invoice.component");
-var user_list_component_1 = require("./component/user-list.component");
+var product_detail_component_1 = require('./component/product-detail.component');
+var http_1 = require("@angular/http");
+var angular2_in_memory_web_api_1 = require("angular2-in-memory-web-api");
+var in_memory_product_service_1 = require("./mock/in-memory-product.service");
+var product_service_1 = require("./service/product.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,25 +25,14 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                app_routing_module_1.AppRoutingModule
+                http_1.HttpModule,
+                angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_product_service_1.InMemoryProductService, { delay: 500 })
             ],
             declarations: [
                 app_component_1.AppComponent,
-                page_one_component_1.PageOneComponent,
-                page_two_component_1.PageTwoComponent,
-                home_component_1.HomeComponent,
-                about_component_1.AboutComponent,
-                product_list_component_1.ProductListComponent,
-                product_detail_component_1.ProductDetailComponent,
-                line_item_component_1.LineItemComponent,
-                sales_invoice_component_1.SalesInvoice,
-                user_list_component_1.UserListComponent
+                product_detail_component_1.ProductDetailComponent
             ],
-            providers: [
-                {
-                    provide: common_1.APP_BASE_HREF, useValue: '/'
-                }
-            ],
+            providers: [product_service_1.ProductService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

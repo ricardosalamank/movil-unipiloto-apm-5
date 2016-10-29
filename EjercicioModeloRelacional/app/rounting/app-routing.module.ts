@@ -6,15 +6,19 @@ import {AboutComponent} from "../component/about.component";
 import {PageOneComponent} from "../component/page-one.component";
 import {ProductListComponent} from "../component/product-list.component";
 import {ProductDetailComponent} from "../component/product-detail.component";
+import {LineItemComponent} from "../component/line-item.component";
+import {SalesInvoice} from "../component/sales-invoice.component";
+import {UserListComponent} from "../component/user-list.component";
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home',  component:  HomeComponent},
-    { path: 'about',  component:  AboutComponent},
-    { path: 'page-one', component: PageOneComponent },
-    { path: 'page-two', component: PageTwoComponent },
     { path: 'product-list', component: ProductListComponent },
-    { path: 'product/detail/:id', component: ProductDetailComponent }
+    { path: 'user-list', component: UserListComponent },
+    { path: 'product/detail/:id', component: ProductDetailComponent },
+    { path: 'page-line-item', component: LineItemComponent },
+    { path: 'line/detail/:id', component: SalesInvoice }
+
 ];
 
 @NgModule({

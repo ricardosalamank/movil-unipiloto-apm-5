@@ -1,0 +1,18 @@
+<h1>{{ title }}</h1>
+<div *ngIf="lineItem">
+    <hr />
+    <label>id: </label><br />
+    <input [(ngModel)]="lineItem.id" placeholder="id"><br />
+    <label>salesInvoice: </label><br />
+    <li *ngFor="let salesInvoice of lineItem.salesInvoiceID">
+        <span>{{salesInvoice}}</span>
+    </li>
+    <label>lineNumber: </label><br />
+    <input [(ngModel)]="lineItem.lineNumber" placeholder="lineNumber"><br />
+    <label>Products: </label><br />
+    <li *ngFor="let product of lineItem.productId">
+        <span>{{product}}</span>
+    </li>
+    <label>purchasePrice: </label><br />
+    <input [(ngModel)]="lineItem.purchasePrice" placeholder="purchasePrice"><br />
+</div>

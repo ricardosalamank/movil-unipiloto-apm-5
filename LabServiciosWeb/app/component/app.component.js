@@ -10,29 +10,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var product_service_1 = require("../service/product.service");
-var router_1 = require("@angular/router");
-var ProductListComponent = (function () {
-    function ProductListComponent(router, productService) {
-        this.router = router;
+var AppComponent = (function () {
+    function AppComponent(productService) {
         this.productService = productService;
         this.title = "los productos del Año";
     }
-    ProductListComponent.prototype.getProducts = function () {
+    AppComponent.prototype.getProducts = function () {
         var _this = this;
         this.productService.getProducts().then(function (products) { return _this.products = products; });
     };
-    ProductListComponent.prototype.ngOnInit = function () {
+    AppComponent.prototype.ngOnInit = function () {
         this.getProducts();
     };
-    ProductListComponent = __decorate([
+    AppComponent.prototype.onSelect = function (product) {
+        this.selected = product;
+    };
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'product-list-app',
+            selector: 'my-app',
             templateUrl: 'app/templates/product-list.html',
             providers: [product_service_1.ProductService]
         }), 
-        __metadata('design:paramtypes', [router_1.Router, product_service_1.ProductService])
-    ], ProductListComponent);
-    return ProductListComponent;
+        __metadata('design:paramtypes', [product_service_1.ProductService])
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.ProductListComponent = ProductListComponent;
-//# sourceMappingURL=product-list.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map
