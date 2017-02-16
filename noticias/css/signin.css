@@ -1,0 +1,91 @@
+
+.navbar-fixed-top{
+  background-color: #FD4C52;
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+td, th {
+  border:0px;
+}
+
+.tritems{
+  border: 10px solid #9E9E9E;
+}
+.tritems2{
+  border: 10px solid #FFFFFF;
+}
+
+.boton {
+  background:#62BC0F;
+  background-size: 60%; /* Tamaño de la imagen */
+  height: 60px;  /* Alto del botón */
+  width: 60px;  /* Ancho del botón */
+  display: table-cell;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow:
+    /* Sombras externa */
+          inset 0 10px 15px rgba(255,255,255,.35), inset 0 -10px 15px rgba(0,0,0,.05), inset 10px 0 15px rgba(0,0,0,.05), inset -10px 0 15px rgba(0,0,0,.05),
+            /* Sombra interna */
+          0 5px 20px rgba(0,0,0,.1);
+}
+
+/* Al presionar */
+.boton:active {
+  box-shadow: inset 0 5px 30px rgba(0,0,0,.2); /* Sombra interior */
+  background-size: 55%; /* Cambiamos el tamaño de la imagen */
+}
+
+.boton2 {
+  background: #1391bc;
+  background-size: 60%; /* Tamaño de la imagen */
+  height: 60px;  /* Alto del botón */
+  width: 60px;  /* Ancho del botón */
+  display: table-cell;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow:
+    /* Sombras externa */
+          inset 0 10px 15px rgba(255,255,255,.35), inset 0 -10px 15px rgba(0,0,0,.05), inset 10px 0 15px rgba(0,0,0,.05), inset -10px 0 15px rgba(0,0,0,.05),
+            /* Sombra interna */
+          0 5px 20px rgba(0,0,0,.1);
+}
+
+/* Al presionar */
+.boton:active {
+  box-shadow: inset 0 5px 30px rgba(0,0,0,.2); /* Sombra interior */
+  background-size: 55%; /* Cambiamos el tamaño de la imagen */
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background: #9e9e9e;
+}
+
+
+.items{
+  margin-left: -150px;
+  width: 10%;
+  background: #9e9e9e;
+  -webkit-transition: width 1s, background 1s;
+  -moz-transition: width 1s, background 1s;
+  -o-transition: width 1s, background 1s;
+  transition: width 1s, background 1s;
+}
+
+#table {
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.evento{
+  margin-left: 10px;
+  width: 95%;
+  background: #FFFFFF;
+}
+
+

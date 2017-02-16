@@ -1,0 +1,16 @@
+Referencia: 
+https://github.com/driftyco/ionic-app-scripts
+
+Es necesario modificar el package.json en la parte de "scripts" debe aparecer así:
+"scripts": {
+"build": "ionic-app-scripts build",
+"serve": "ionic-app-scripts serve",
+"watch": "ionic-app-scripts watch"
+
+},
+
+En vez de:
+"scripts": {
+"ionic:build": "ionic-app-scripts build",
+"ionic:serve": "ionic-app-scripts serve",
+},

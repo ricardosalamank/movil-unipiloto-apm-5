@@ -9,6 +9,9 @@ diseños de maquetacion
 http://pencil.evolus.vn/
 http://www.axure.com/
 
+MAQUETACION GENERA ARCHIVOS PERO IONIC 1
+https://creator.ionic.io/app/login
+
 aionic framework
 http://ionicframework.com/html5-input-types/
 
@@ -62,3 +65,61 @@ lecturas
 http://www.desarrolloweb.com/articulos/que-es-responsive-web-design.html
 https://msdn.microsoft.com/en-us/magazine/hh653584.aspx
 https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/
+
+Probar APIS
+postman
+url : profe  http://138.68.0.83:7070/
+
+
+plugin consumo de apis rest de servidor a servidor  con
+(exepciones de seguridad)
+Allow-Control-Allow-Origin (cros plugin)
+
+colores para material design
+https://www.materialpalette.com/lime/cyan
+
+forma agregar en path varible de entorno 
+;%ANDROID_HOME%\tools
+;%JAVA_HOME%\bin
+
+Eliminar carpetas extenzas como node_modules
+>npm install -g rimraf
+>rimraf node_modules
+
+repositorio floobits
+https://floobits.com/alejo8591
+
+ionic framework
+http://ionicframework.com/docs/v2/
+
+PROBAR Y CREAR EXPRESIONES REGULARES
+https://regex101.com/
+
+native ionic (PLUGINS)
+http://ionicframework.com/docs/v2/native/
+http://ngcordova.com/
+https://cordova.apache.org/plugins/
+
+URL AYUDA DE CROME VER CONSOLA DE DISPOSITIVOS Y TAMBIEN GENIMOTION
+chrome://inspect/#devices
+
+para creacion de key de google
+<!-- https://developers.google.com/maps/documentation/javascript/get-api-key -->
+https://developers.google.com/maps/
+direccion de mi api
+https://console.developers.google.com/apis/credentials?project=generated-tine-150713
+mi key google maps : AIzaSyDzk6kwFUwfsyk3V4STvOZ4wY_cjQ29H0k
+	// https://developers.google.com/maps/?hl=es-419.
+	/*
+	ionic plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyC2a0VhkA_0fz1a1M_K0wC22JwFPjBIdL4" --variable API_KEY_FOR_IOS="El api key generado"
+	*/
+
+inspeccionar consola emuladorgenymotion
+chrome://inspect/#devices
+
+para probar script de bases de datos sqlite
+https://es.khanacademy.org/computer-programming/new/sql
+
+
+
+

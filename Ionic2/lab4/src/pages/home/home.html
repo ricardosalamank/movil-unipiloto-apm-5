@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="selected">
+    <h1>{{ product.name }}</h1>
+    <h5>id: {{product.id}}</h5>
+    <h5>type: {{product.type}}</h5>
+    <h5>quantity: {{product.quantity}}</h5>
+    <h5>price: {{product.price}}</h5>
+  </div>
+
+
+  <p>
+    <button ion-button (click)="loadList()" color="light">Light</button>
+  </p>
+
+  <p>
+    <button ion-button (click)="loadInfo()">Default</button>
+  </p>
+
+  <p>
+    <button ion-button (click)="loadProduct()" color="secondary">Secondary</button>
+  </p>
+
+  <p>
+    <button ion-button color="danger" block round>Danger</button>
+  </p>
+
+  <p>
+    <button ion-button color="dark">Dark</button>
+  </p>
+</ion-content>

@@ -1,0 +1,30 @@
+/*Acordeon con cambio de estado con base de Bootstrap */
+
+.accordion-group .accordion-heading:after {
+    background: #E79925;
+}
+
+.accordion-group {
+    background: #f8e0bd;
+
+}
+
+.accordion{margin-bottom:20px;}
+.accordion-group{margin-bottom:2px;border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px; width:500px;}
+.accordion-heading{border-bottom:0;}
+.accordion-heading .accordion-toggle{display:block;padding:8px 15px;}
+.accordion-toggle{cursor:pointer;}
+.accordion-inner{padding:9px 15px;border-top:1px solid #e5e5e5;}
+
+.accordion-body{-webkit-transition:"height 4s linear";-moz-transition:"height 4s linear";-o-transition:"height .4s linear";transition:"height .4s linear";}
+.accordion-group{border:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;margin-bottom:5px;}
+.accordion-group .accordion-heading{position:relative;}
+
+/*Control del cambio de estado */
+.accordion-group .accordion-heading:after{pointer-events:none;color:#fff;content:"+";font-size:15px;padding:8px 13px;position:absolute;top:0;right:0;bottom:auto;left:auto;}
+.accordion-group .accordion-heading.accordion-opened:after{content:"-";padding:8px 15px;}
+
+
+.accordion-group a{color:#231f20;}
+.accordion-group a:hover{text-decoration:none;}
+.accordion-group .accordion-inner{border:none;padding:20px;}

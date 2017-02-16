@@ -1,0 +1,39 @@
+C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Autodesk\Alias2014\bin;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Autodesk\Backburner\;C:\Program Files\Common Files\Autodesk Shared\;C:\android\platform-tools;C:\android\tools;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\TortoiseHg\;%ANDROID_HOME%\tools;%JAVA_HOME%\bin
+
+
+RC3, Error Reporting, Final, Oh My!
+
+Por favor leer el post en el blog oficial para tener contexto de la mejora
+Para proyectos nuevos o de ceros
+
+Cómo actualizar y obtener estas mejoras:
+
+$ npm install -g ionic
+
+
+$ ionic -v
+# should return at least 2.1.12
+Para proyectos ya creados
+
+Para proyectos ya creados o actualizar, ¡ojo! esto aplica para las versiones en RC:
+
+$ npm install ionic-angular@latest --save
+# get RC3 of ionic-angular
+
+
+$ npm install @ionic/app-scripts@latest --save-dev
+# get the latest app-scripts package
+Después de instalar esos paquetes, abra src/app/app.module.ts e importar ErrorHandler de angular y IonicErrorHandler de ionic-angular:
+
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+
+@NgModule({
+
+  // Here we tell the Angular ErrorHandling class
+  // that it should be using the IonicErrorHandler class for any errors
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+})
+
+
+

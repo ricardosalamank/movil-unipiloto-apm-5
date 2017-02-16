@@ -1,0 +1,51 @@
+BUILD SUCCESSFUL
+
+Total time: 31.627 secs
+Built the following apk(s):
+        C:/Users/Administrador/Documents/ricardo/product-app/platforms/android/b
+uild/outputs/apk/android-release-unsigned.apk
+
+C:\Users\Administrador\Documents\ricardo\product-app>keytool -genkey -v -keystor
+e product-app.keystore -alias product-app -keyalg RSA -keysize 2048 -validity 10
+000
+Introduzca la contraseña del almacén de claves:
+Volver a escribir la contraseña nueva:
+¿Cuáles son su nombre y su apellido?
+  [Unknown]:  ricardo salamanca
+¿Cuál es el nombre de su unidad de organización?
+  [Unknown]:  cam
+¿Cuál es el nombre de su organización?
+  [Unknown]:  cam
+¿Cuál es el nombre de su ciudad o localidad?
+  [Unknown]:  bogota
+¿Cuál es el nombre de su estado o provincia?
+  [Unknown]:  colombia
+¿Cuál es el código de país de dos letras de la unidad?
+  [Unknown]:  57
+¿Es correcto CN=ricardo salamanca, OU=cam, O=cam, L=bogota, ST=colombia, C=57?
+  [no]:  si
+
+Generando par de claves RSA de 2.048 bits para certificado autofirmado (SHA256wi
+thRSA) con una validez de 10.000 días
+        para: CN=ricardo salamanca, OU=cam, O=cam, L=bogota, ST=colombia, C=57
+Introduzca la contraseña de clave para <product-app>
+        (INTRO si es la misma contraseña que la del almacén de claves):
+La contraseña de clave es demasiado corta; debe tener al menos 6 caracteres
+Introduzca la contraseña de clave para <product-app>
+        (INTRO si es la misma contraseña que la del almacén de claves):
+Volver a escribir la contraseña nueva:
+No coinciden. Inténtelo de nuevo
+Introduzca la contraseña de clave para <product-app>
+        (INTRO si es la misma contraseña que la del almacén de claves):
+Volver a escribir la contraseña nueva:
+No coinciden. Inténtelo de nuevo
+error de herramienta de claves: java.lang.Exception: Demasiados fallos; no se ha
+ agregado la clave al almacén de claves
+java.lang.Exception: Demasiados fallos; no se ha agregado la clave al almacén de
+ claves
+        at sun.security.tools.keytool.Main.promptForKeyPass(Main.java:1436)
+        at sun.security.tools.keytool.Main.doGenKeyPair(Main.java:1641)
+        at sun.security.tools.keytool.Main.doCommands(Main.java:966)
+        at sun.security.tools.keytool.Main.run(Main.java:343)
+        at sun.security.tools.keytool.Main.main(Main.java:336)
+

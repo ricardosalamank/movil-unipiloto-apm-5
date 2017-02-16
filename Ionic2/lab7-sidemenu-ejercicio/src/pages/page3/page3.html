@@ -1,0 +1,31 @@
+<!--
+  Generated template for the Page3 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page 3</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-border>
+    <ion-item *ngFor="let user of users">
+      <button ion-button color="light" item-left (click)="onSelect(user.id)">
+        <ion-icon ios="ios-phone-portrait" md="md-phone-portrait"></ion-icon>
+      </button>
+      <span>{{user.id}}</span> {{user.name}}
+      <button ion-button color="dark"  item-right (click)="delete(user)">
+        <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+      </button>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
