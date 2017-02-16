@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<title>{{name}}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	</head>	
+	<body>
+		<h1>¡Hola!, Bienvenido al API</h1>
+		<section><h2></h2>
+			<ol>
+				<li>Products
+					<ol>
+						<li><b>GET</b> /api/v1/product/list</li>
+						<li><b>POST</b> /api/v1/product/create</li>
+						<li><b>GET</b> /api/v1/product/detail/{id}</li>
+						<li><b>POST</b> /api/v1/product/update/{id}</li>
+						<li><b>DELETE</b> /api/v1/product/delete/{id}</li>
+					</ol>
+				</li>
+				<li> Users
+					<ol>
+						<li><b>GET</b> /api/v1/user/profile/{email}</li>
+						<li><b>POST</b> /api/v1/user/sign-in</li>
+						<li><b>POST</b> /api/v1/user/sign-up</li>
+						<li><b>POST</b> /api/v1/user/update/{email}</li>
+						<li><b>POST</b> /api/v1/user/forgot-password</li>
+						<li><b>DELETE</b> /api/v1/user/delete/{email}</li>
+					</ol>
+				</li>
+			</ol>
+		</section>
+	</body>
+</html>

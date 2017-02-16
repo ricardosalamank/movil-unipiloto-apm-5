@@ -1,0 +1,12 @@
+Agregue el complemento de lista blanca en su proyecto.
+
+cordova plugin add cordova-plugin-whitelist --save
+Que permitirá la solicitud http en su dispositivo Android. Y también comprueba tu android AndroidManifest.xml.It necesita este permiso
+
+<uses-permission android:name="android.permission.INTERNET" />
+En el último agregue estas líneas en su config.xml
+
+<access origin="*"/>
+<allow-intent href="*"/>
+<allow-navigation href="*"/>
+Luego, su petición http funcionará correctamente thanks.For más detalles Lea esta lista blanca

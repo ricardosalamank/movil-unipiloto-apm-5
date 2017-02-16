@@ -7,7 +7,6 @@ otro["id"] = '1234';
  
  mi[1] = otro;
 
- 
  alert(mi["1"]["id"]);
  
 

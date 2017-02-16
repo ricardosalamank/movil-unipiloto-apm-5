@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+
+<div>
+    <label>Product name:</label> <input #productName />
+    <br>
+    <label>Product type:</label> <input #productType />
+    <br>
+    <label>Product quantity:</label> <input #productQuantity />
+    <br>
+    <label>Product price:</label> <input #productPrice />
+    <button (click)="add(productName.value, productType.value, productQuantity.value, productPrice.value); productName.value=''">
+        Add
+    </button>
+</div>
+
+
+<hr />
+<ul>
+    <li *ngFor="let product of products"
+        [class.pepito]="product === selected"
+        (click)="onSelect(product)">
+        <span>{{product.id}}</span> {{product.name}}
+    </li>
+</ul>
+
+<product-detail [product]="selected"></product-detail>
